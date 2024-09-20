@@ -2,13 +2,30 @@
   "name": "ping-pong-ball-feeder-system",
   "version": "1.0.0",
   "description": "World's Most Advanced Ping Pong Ball Feeder System",
+  "private": true,
   "scripts": {
     "install": "cd frontend && npm install",
     "dev:frontend": "cd frontend && npm run dev",
     "dev:backend": "cd backend && uvicorn main:app --reload --port 8000",
-    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\""
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run start",
+    "lint": "cd frontend && npm run lint"
+  },
+  "dependencies": {
+    "next": "14.2.12",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "concurrently": "^9.0.1"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "concurrently": "^9.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.12",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
