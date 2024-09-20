@@ -1,0 +1,14 @@
+{
+  "name": "ping-pong-ball-feeder-system",
+  "version": "1.0.0",
+  "description": "World's Most Advanced Ping Pong Ball Feeder System",
+  "scripts": {
+    "install": "cd frontend && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && uvicorn main:app --reload --port 8000",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
