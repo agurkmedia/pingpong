@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "backend": "cd .. && .venv\\Scripts\\activate && cd backend && uvicorn main:app --reload --port 8000",
+    "backend": "cd ../backend && uvicorn main:app --reload --port 8000",
     "dev:all": "concurrently \"npm run dev\" \"npm run backend\""
   },
   "dependencies": {
